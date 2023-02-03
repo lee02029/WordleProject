@@ -1,5 +1,9 @@
 # Kotobaasobi
 
+## 미리 보기
+<img width="880" alt="스크린샷 2023-02-03 오후 1 44 07" src="https://user-images.githubusercontent.com/80015108/216514469-34ddb535-ae02-4d10-8b9d-d906a513b447.png">
+
+
 ## 앱 소개
 <aside>
 🕹️ 디자이너 1명과 iOS 개발자 1명으로 진행한 프로젝트입니다. 
