@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mvp-Wf-GhR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MochiyPopOne-Regular.ttf">
+            <string>MochiyPopOne-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Stage View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="StageViewController" customModule="WordleJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yqp-Do-EKs">
+                                <rect key="frame" x="120" y="275.5" width="174" height="156.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainAlpaca" translatesAutoresizingMaskIntoConstraints="NO" id="EvB-ZJ-OP4">
+                                        <rect key="frame" x="39.5" y="0.0" width="95" height="84"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和ドル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juU-Ot-MWY">
+                                        <rect key="frame" x="36" y="92" width="102" height="40"/>
+                                        <fontDescription key="fontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O76-bN-1ZB">
+                                        <rect key="frame" x="59" y="140" width="56" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-Aq-Kb3">
+                                <rect key="frame" x="32" y="482" width="350" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gi-HS-py8">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="53m-Fe-IoN"/>
+                                            <constraint firstAttribute="width" constant="350" id="kYp-5z-bch"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="初級" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="easyStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EgG-iT-JwV"/>
+                                            <segue destination="j1E-uP-u1I" kind="show" id="rN0-pC-Djy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-oQ-CBi">
+                                        <rect key="frame" x="0.0" y="90" width="350" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="中級" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="intermediateStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="W8x-F2-acN"/>
+                                            <segue destination="XjX-fa-mca" kind="show" id="oLW-jc-bcP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVI-cM-mcY">
+                                        <rect key="frame" x="0.0" y="180" width="350" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="高級" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="hardStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w52-zg-gC2"/>
+                                            <segue destination="pDk-YL-fBT" kind="show" id="AY5-Dh-A8K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yqp-Do-EKs" secondAttribute="trailing" constant="120" id="Fye-GS-Juj"/>
+                            <constraint firstItem="xAm-Aq-Kb3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="OcY-OD-MJ3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xAm-Aq-Kb3" secondAttribute="trailing" constant="32" id="SHX-R6-C3c"/>
+                            <constraint firstItem="xAm-Aq-Kb3" firstAttribute="top" secondItem="yqp-Do-EKs" secondAttribute="bottom" constant="50" id="jMY-sy-Faz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xAm-Aq-Kb3" secondAttribute="bottom" constant="130" id="m6a-f4-86Y"/>
+                            <constraint firstItem="yqp-Do-EKs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="nq0-XO-p1M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="suG-Qb-oIP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753.62318840579712" y="71.651785714285708"/>
+        </scene>
+        <!--Intermediate Game View Controller-->
+        <scene sceneID="Kgn-jx-VY1">
+            <objects>
+                <viewController id="XjX-fa-mca" customClass="IntermediateGameViewController" customModule="WordleJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhI-cO-3rC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mo1-e5-YR4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="65r-3W-CaG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gF9-cN-ZXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="72"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lOW-sb-Fsg">
+            <objects>
+                <viewController storyboardIdentifier="SuccessVC" id="mqZ-g7-PtX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bVu-v6-lbq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="X5t-bL-2NW">
+                                <rect key="frame" x="25" y="620" width="364" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR7-y6-giP">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="78v-CX-uBp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ホームへ" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="easyStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ftm-Nm-Aso"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbi-CZ-ItA">
+                                        <rect key="frame" x="192" y="0.0" width="172" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Lt1-oP-ZTE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="新しいゲーム" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="easyStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hGp-tM-dbX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SuccessAlphaca" translatesAutoresizingMaskIntoConstraints="NO" id="3iZ-ub-14h">
+                                <rect key="frame" x="122" y="304" width="170" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="55r-t9-LfN">
+                                <rect key="frame" x="114.5" y="164" width="185" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="成功" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKw-WC-WBh">
+                                        <rect key="frame" x="60" y="0.0" width="65" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmN-hC-JdG">
+                                        <rect key="frame" x="23" y="62" width="139.5" height="24"/>
+                                        <string key="text">良く出来ました。
+</string>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正解：あおい(青い)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-SG-eeh">
+                                        <rect key="frame" x="0.0" y="96" width="185" height="29"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="VNU-GT-uYc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cl2-i2-0bs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="55r-t9-LfN" firstAttribute="top" secondItem="Cl2-i2-0bs" secondAttribute="top" constant="116" id="10C-TR-HB6"/>
+                            <constraint firstItem="X5t-bL-2NW" firstAttribute="leading" secondItem="Cl2-i2-0bs" secondAttribute="leading" constant="25" id="Baz-3J-FIs"/>
+                            <constraint firstItem="Cl2-i2-0bs" firstAttribute="trailing" secondItem="X5t-bL-2NW" secondAttribute="trailing" constant="25" id="DJk-Gc-qcx"/>
+                            <constraint firstItem="Cl2-i2-0bs" firstAttribute="bottom" secondItem="X5t-bL-2NW" secondAttribute="bottom" constant="172" id="FbF-eJ-4Tl"/>
+                            <constraint firstItem="55r-t9-LfN" firstAttribute="leading" secondItem="Cl2-i2-0bs" secondAttribute="leading" constant="114.5" id="Sgh-cu-Fg6"/>
+                            <constraint firstItem="55r-t9-LfN" firstAttribute="centerX" secondItem="bVu-v6-lbq" secondAttribute="centerX" id="tb6-vW-sDc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7p-8I-r90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2918.840579710145" y="-219.64285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xaC-h0-VSe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mvp-Wf-GhR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PpX-dW-wMU">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageReference key="backIndicatorImage" image="chevron.backward" catalog="system" symbolScale="default"/>
+                        <imageReference key="backIndicatorTransitionMaskImage" image="chevron.backward" catalog="system" symbolScale="default"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="6jF-hm-zhC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtl-6R-Zct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="72"/>
+        </scene>
+        <!--Easy Game View Controller-->
+        <scene sceneID="Wwa-f3-ms1">
+            <objects>
+                <viewController id="j1E-uP-u1I" customClass="EasyGameViewController" customModule="WordleJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bbr-LG-cct">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="o4r-eb-Kd0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DKX-yd-009"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liJ-BU-sYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="-593"/>
+        </scene>
+        <!--Hard Game View Controller-->
+        <scene sceneID="MmE-1K-PWH">
+            <objects>
+                <viewController id="pDk-YL-fBT" customClass="HardGameViewController" customModule="WordleJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bI2-Ux-ZGa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7uV-qm-n1b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kve-Rf-uu2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZg-HF-hwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="760"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FCj-pe-KmO">
+            <objects>
+                <viewController storyboardIdentifier="FailVC" id="wg3-lO-aBR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hkc-Lx-167">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tHw-Ip-ymf">
+                                <rect key="frame" x="122" y="160" width="190.5" height="63.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="失敗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-Gp-nbh">
+                                        <rect key="frame" x="61.5" y="0.0" width="68" height="40"/>
+                                        <fontDescription key="fontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="広告を見てもう一回!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c0-OJ-Igu">
+                                        <rect key="frame" x="0.0" y="40" width="190.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="FailAlphaca" translatesAutoresizingMaskIntoConstraints="NO" id="Z7c-Bv-2hY">
+                                <rect key="frame" x="122" y="322" width="170" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-2v-Iwf">
+                                <rect key="frame" x="27" y="620" width="360" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvW-KQ-TGG">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="39I-WZ-n9r"/>
+                                            <constraint firstAttribute="width" constant="170" id="Y60-om-aD6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ホームへ"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ホームへ">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="easyStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="m3j-cR-S0V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW1-pa-nmu">
+                                        <rect key="frame" x="190" y="0.0" width="170" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="cAf-MK-V8X"/>
+                                            <constraint firstAttribute="width" constant="350" id="pIe-dH-5YX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="新しいゲーム" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="MochiyPopOne-Regular" family="Mochiy Pop One" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="easyStageButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bpM-RC-t4I"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gic-nC-TnF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFW-xB-Uos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2919" y="518"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FailAlphaca" width="595" height="420"/>
+        <image name="MainAlpaca" width="95" height="84"/>
+        <image name="SuccessAlphaca" width="595" height="420"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

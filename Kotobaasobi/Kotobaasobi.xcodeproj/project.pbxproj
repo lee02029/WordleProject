@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F608731E298430760080CE5C /* NormalGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608731D298430760080CE5C /* NormalGameState.swift */; };
+		F6087320298430860080CE5C /* HardGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608731F298430860080CE5C /* HardGameState.swift */; };
+		F6087324298430AA0080CE5C /* HardGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6087323298430AA0080CE5C /* HardGameView.swift */; };
+		F608732B298431B50080CE5C /* EasyKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608732A298431B50080CE5C /* EasyKeyboardView.swift */; };
+		F608732D298431BE0080CE5C /* NormalKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608732C298431BE0080CE5C /* NormalKeyboardView.swift */; };
+		F6394C78298187D90083506F /* +Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6394C77298187D90083506F /* +Color.swift */; };
+		F649F0C229843AF600A14B81 /* NormalGameGuessJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F649F0C129843AF600A14B81 /* NormalGameGuessJapaneseWord.txt */; };
+		F649F0C429843C0400A14B81 /* NormalGameAnswerJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F649F0C329843C0400A14B81 /* NormalGameAnswerJapaneseWord.txt */; };
+		F649F0C629843C2200A14B81 /* EasyGameGuessJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F649F0C529843C2100A14B81 /* EasyGameGuessJapaneseWord.txt */; };
+		F649F0CA29843CAC00A14B81 /* EasyGameAnswerJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F649F0C929843CAC00A14B81 /* EasyGameAnswerJapaneseWord.txt */; };
+		F6567FCB296BEE88003F806E /* KotobaasobiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FCA296BEE88003F806E /* KotobaasobiApp.swift */; };
+		F6567FCD296BEE88003F806E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FCC296BEE88003F806E /* MainView.swift */; };
+		F6567FCF296BEE8A003F806E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6567FCE296BEE8A003F806E /* Assets.xcassets */; };
+		F6567FD2296BEE8A003F806E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6567FD1296BEE8A003F806E /* Preview Assets.xcassets */; };
+		F6567FE1296C2546003F806E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FE0296C2546003F806E /* OnboardingView.swift */; };
+		F6567FE5296D4DCB003F806E /* HardKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FE4296D4DCB003F806E /* HardKeyboardView.swift */; };
+		F6567FEA296D6094003F806E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F6567FE9296D6094003F806E /* ComposableArchitecture */; };
+		F6567FEF296D61FD003F806E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FEE296D61FD003F806E /* Models.swift */; };
+		F6567FF1296D65BF003F806E /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FF0296D65BF003F806E /* Words.swift */; };
+		F6567FF7296D6911003F806E /* EasyGameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6567FF6296D6911003F806E /* EasyGameOverView.swift */; };
+		F6583FB62984483200E205B9 /* HardGameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6087330298431FB0080CE5C /* HardGameOverView.swift */; };
+		F6583FB82984484100E205B9 /* NormalGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6583FB72984484100E205B9 /* NormalGameView.swift */; };
+		F66309A529844BF600CC294A /* NormalGameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608732E298431F20080CE5C /* NormalGameOverView.swift */; };
+		F66309A62986BD6700CC294A /* MochiyPopOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6567FED296D61E6003F806E /* MochiyPopOne-Regular.ttf */; };
+		F66309A92986C14700CC294A /* AlertX in Frameworks */ = {isa = PBXBuildFile; productRef = F66309A82986C14700CC294A /* AlertX */; };
+		F66309AB2986CA8B00CC294A /* +keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66309AA2986CA8B00CC294A /* +keyboard.swift */; };
+		F66309AE2986D41B00CC294A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = F66309AD2986D41B00CC294A /* GoogleMobileAds */; };
+		F6B351B029810893005C27AB /* EasyGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B351AF29810893005C27AB /* EasyGameView.swift */; };
+		F6B351B229810C53005C27AB /* EasyGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B351B129810C53005C27AB /* EasyGameState.swift */; };
+		F6BDAF2C2973EEFB00D940C6 /* HardGameGuessJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6BDAF2B2973EEFB00D940C6 /* HardGameGuessJapaneseWord.txt */; };
+		F6BDAF2E2973EF8B00D940C6 /* HardGameAnswerJapaneseWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6BDAF2D2973EF8B00D940C6 /* HardGameAnswerJapaneseWord.txt */; };
+		F6BDAF302973EFBD00D940C6 /* wordle-allowed-guesses_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6BDAF2F2973EFBD00D940C6 /* wordle-allowed-guesses_en.txt */; };
+		F6BDAF322973EFD000D940C6 /* wordle-answers-alphabetical_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6BDAF312973EFD000D940C6 /* wordle-answers-alphabetical_en.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6BDAF23297397D800D940C6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F608731D298430760080CE5C /* NormalGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalGameState.swift; sourceTree = "<group>"; };
+		F608731F298430860080CE5C /* HardGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameState.swift; sourceTree = "<group>"; };
+		F6087323298430AA0080CE5C /* HardGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameView.swift; sourceTree = "<group>"; };
+		F608732A298431B50080CE5C /* EasyKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyKeyboardView.swift; sourceTree = "<group>"; };
+		F608732C298431BE0080CE5C /* NormalKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalKeyboardView.swift; sourceTree = "<group>"; };
+		F608732E298431F20080CE5C /* NormalGameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalGameOverView.swift; sourceTree = "<group>"; };
+		F6087330298431FB0080CE5C /* HardGameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameOverView.swift; sourceTree = "<group>"; };
+		F6394C77298187D90083506F /* +Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Color.swift"; sourceTree = "<group>"; };
+		F649F0C129843AF600A14B81 /* NormalGameGuessJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NormalGameGuessJapaneseWord.txt; sourceTree = "<group>"; };
+		F649F0C329843C0400A14B81 /* NormalGameAnswerJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NormalGameAnswerJapaneseWord.txt; sourceTree = "<group>"; };
+		F649F0C529843C2100A14B81 /* EasyGameGuessJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EasyGameGuessJapaneseWord.txt; sourceTree = "<group>"; };
+		F649F0C929843CAC00A14B81 /* EasyGameAnswerJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EasyGameAnswerJapaneseWord.txt; sourceTree = "<group>"; };
+		F6567FC7296BEE88003F806E /* Kotobaasobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotobaasobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6567FCA296BEE88003F806E /* KotobaasobiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaasobiApp.swift; sourceTree = "<group>"; };
+		F6567FCC296BEE88003F806E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F6567FCE296BEE8A003F806E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6567FD1296BEE8A003F806E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6567FDF296C1D75003F806E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6567FE0296C2546003F806E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F6567FE4296D4DCB003F806E /* HardKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardKeyboardView.swift; sourceTree = "<group>"; };
+		F6567FED296D61E6003F806E /* MochiyPopOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MochiyPopOne-Regular.ttf"; sourceTree = "<group>"; };
+		F6567FEE296D61FD003F806E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F6567FF0296D65BF003F806E /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		F6567FF6296D6911003F806E /* EasyGameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameOverView.swift; sourceTree = "<group>"; };
+		F6583FB72984484100E205B9 /* NormalGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalGameView.swift; sourceTree = "<group>"; };
+		F66309AA2986CA8B00CC294A /* +keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+keyboard.swift"; sourceTree = "<group>"; };
+		F6B351AF29810893005C27AB /* EasyGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameView.swift; sourceTree = "<group>"; };
+		F6B351B129810C53005C27AB /* EasyGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameState.swift; sourceTree = "<group>"; };
+		F6BDAF2B2973EEFB00D940C6 /* HardGameGuessJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardGameGuessJapaneseWord.txt; sourceTree = "<group>"; };
+		F6BDAF2D2973EF8B00D940C6 /* HardGameAnswerJapaneseWord.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardGameAnswerJapaneseWord.txt; sourceTree = "<group>"; };
+		F6BDAF2F2973EFBD00D940C6 /* wordle-allowed-guesses_en.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wordle-allowed-guesses_en.txt"; sourceTree = "<group>"; };
+		F6BDAF312973EFD000D940C6 /* wordle-answers-alphabetical_en.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "wordle-answers-alphabetical_en.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6567FC4296BEE88003F806E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66309AE2986D41B00CC294A /* GoogleMobileAds in Frameworks */,
+				F66309A92986C14700CC294A /* AlertX in Frameworks */,
+				F6567FEA296D6094003F806E /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6087325298430BD0080CE5C /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				F6B351AF29810893005C27AB /* EasyGameView.swift */,
+				F6583FB72984484100E205B9 /* NormalGameView.swift */,
+				F6087323298430AA0080CE5C /* HardGameView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		F6087326298430F30080CE5C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FCC296BEE88003F806E /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F60873272984312E0080CE5C /* GameOverView */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FF6296D6911003F806E /* EasyGameOverView.swift */,
+				F608732E298431F20080CE5C /* NormalGameOverView.swift */,
+				F6087330298431FB0080CE5C /* HardGameOverView.swift */,
+			);
+			path = GameOverView;
+			sourceTree = "<group>";
+		};
+		F6087328298431670080CE5C /* OnboardView */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FE0296C2546003F806E /* OnboardingView.swift */,
+			);
+			path = OnboardView;
+			sourceTree = "<group>";
+		};
+		F6087329298431900080CE5C /* KeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				F608732A298431B50080CE5C /* EasyKeyboardView.swift */,
+				F608732C298431BE0080CE5C /* NormalKeyboardView.swift */,
+				F6567FE4296D4DCB003F806E /* HardKeyboardView.swift */,
+			);
+			path = KeyboardView;
+			sourceTree = "<group>";
+		};
+		F6087332298436350080CE5C /* EasyGameJapaneseWord */ = {
+			isa = PBXGroup;
+			children = (
+				F649F0C529843C2100A14B81 /* EasyGameGuessJapaneseWord.txt */,
+				F649F0C929843CAC00A14B81 /* EasyGameAnswerJapaneseWord.txt */,
+			);
+			path = EasyGameJapaneseWord;
+			sourceTree = "<group>";
+		};
+		F6087333298436440080CE5C /* NormalGameJapaneseWord */ = {
+			isa = PBXGroup;
+			children = (
+				F649F0C129843AF600A14B81 /* NormalGameGuessJapaneseWord.txt */,
+				F649F0C329843C0400A14B81 /* NormalGameAnswerJapaneseWord.txt */,
+			);
+			path = NormalGameJapaneseWord;
+			sourceTree = "<group>";
+		};
+		F60873342984364F0080CE5C /* HardGameJapaneseWord */ = {
+			isa = PBXGroup;
+			children = (
+				F6BDAF2B2973EEFB00D940C6 /* HardGameGuessJapaneseWord.txt */,
+				F6BDAF2D2973EF8B00D940C6 /* HardGameAnswerJapaneseWord.txt */,
+			);
+			path = HardGameJapaneseWord;
+			sourceTree = "<group>";
+		};
+		F60873352984392C0080CE5C /* HardGameEnglishWord */ = {
+			isa = PBXGroup;
+			children = (
+				F6BDAF312973EFD000D940C6 /* wordle-answers-alphabetical_en.txt */,
+				F6BDAF2F2973EFBD00D940C6 /* wordle-allowed-guesses_en.txt */,
+			);
+			path = HardGameEnglishWord;
+			sourceTree = "<group>";
+		};
+		F6567FBE296BEE88003F806E = {
+			isa = PBXGroup;
+			children = (
+				F6567FC9296BEE88003F806E /* Kotobaasobi */,
+				F6567FC8296BEE88003F806E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6567FC8296BEE88003F806E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FC7296BEE88003F806E /* Kotobaasobi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6567FC9296BEE88003F806E /* Kotobaasobi */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FEC296D61CE003F806E /* Models */,
+				F6567FDF296C1D75003F806E /* Info.plist */,
+				F6567FDC296C1996003F806E /* App */,
+				F6567FDB296C1989003F806E /* AppState */,
+				F6567FDA296C1961003F806E /* Resources */,
+				F6567FD9296C192F003F806E /* Extension */,
+				F6567FD8296C1888003F806E /* View */,
+				F6567FCE296BEE8A003F806E /* Assets.xcassets */,
+				F6567FD0296BEE8A003F806E /* Preview Content */,
+			);
+			path = Kotobaasobi;
+			sourceTree = "<group>";
+		};
+		F6567FD0296BEE8A003F806E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FD1296BEE8A003F806E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6567FD8296C1888003F806E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6087328298431670080CE5C /* OnboardView */,
+				F6087326298430F30080CE5C /* MainView */,
+				F6087329298431900080CE5C /* KeyboardView */,
+				F6087325298430BD0080CE5C /* GameView */,
+				F60873272984312E0080CE5C /* GameOverView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6567FD9296C192F003F806E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FF0296D65BF003F806E /* Words.swift */,
+				F6394C77298187D90083506F /* +Color.swift */,
+				F66309AA2986CA8B00CC294A /* +keyboard.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6567FDA296C1961003F806E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F60873352984392C0080CE5C /* HardGameEnglishWord */,
+				F60873342984364F0080CE5C /* HardGameJapaneseWord */,
+				F6087333298436440080CE5C /* NormalGameJapaneseWord */,
+				F6087332298436350080CE5C /* EasyGameJapaneseWord */,
+				F6567FED296D61E6003F806E /* MochiyPopOne-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F6567FDB296C1989003F806E /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				F6B351B129810C53005C27AB /* EasyGameState.swift */,
+				F608731D298430760080CE5C /* NormalGameState.swift */,
+				F608731F298430860080CE5C /* HardGameState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		F6567FDC296C1996003F806E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FCA296BEE88003F806E /* KotobaasobiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F6567FEC296D61CE003F806E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6567FEE296D61FD003F806E /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6567FC6296BEE88003F806E /* Kotobaasobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6567FD5296BEE8A003F806E /* Build configuration list for PBXNativeTarget "Kotobaasobi" */;
+			buildPhases = (
+				F6567FC3296BEE88003F806E /* Sources */,
+				F6567FC4296BEE88003F806E /* Frameworks */,
+				F6567FC5296BEE88003F806E /* Resources */,
+				F6BDAF23297397D800D940C6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kotobaasobi;
+			packageProductDependencies = (
+				F6567FE9296D6094003F806E /* ComposableArchitecture */,
+				F66309A82986C14700CC294A /* AlertX */,
+				F66309AD2986D41B00CC294A /* GoogleMobileAds */,
+			);
+			productName = Kotobaasobi;
+			productReference = F6567FC7296BEE88003F806E /* Kotobaasobi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6567FBF296BEE88003F806E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F6567FC6296BEE88003F806E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F6567FC2296BEE88003F806E /* Build configuration list for PBXProject "Kotobaasobi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6567FBE296BEE88003F806E;
+			packageReferences = (
+				F6567FE8296D6094003F806E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				F66309A72986C14700CC294A /* XCRemoteSwiftPackageReference "AlertX" */,
+				F66309AC2986D41B00CC294A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = F6567FC8296BEE88003F806E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6567FC6296BEE88003F806E /* Kotobaasobi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6567FC5296BEE88003F806E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BDAF302973EFBD00D940C6 /* wordle-allowed-guesses_en.txt in Resources */,
+				F6567FD2296BEE8A003F806E /* Preview Assets.xcassets in Resources */,
+				F649F0C629843C2200A14B81 /* EasyGameGuessJapaneseWord.txt in Resources */,
+				F66309A62986BD6700CC294A /* MochiyPopOne-Regular.ttf in Resources */,
+				F649F0C429843C0400A14B81 /* NormalGameAnswerJapaneseWord.txt in Resources */,
+				F649F0C229843AF600A14B81 /* NormalGameGuessJapaneseWord.txt in Resources */,
+				F6BDAF322973EFD000D940C6 /* wordle-answers-alphabetical_en.txt in Resources */,
+				F6BDAF2E2973EF8B00D940C6 /* HardGameAnswerJapaneseWord.txt in Resources */,
+				F649F0CA29843CAC00A14B81 /* EasyGameAnswerJapaneseWord.txt in Resources */,
+				F6BDAF2C2973EEFB00D940C6 /* HardGameGuessJapaneseWord.txt in Resources */,
+				F6567FCF296BEE8A003F806E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6567FC3296BEE88003F806E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66309A529844BF600CC294A /* NormalGameOverView.swift in Sources */,
+				F6583FB62984483200E205B9 /* HardGameOverView.swift in Sources */,
+				F608732B298431B50080CE5C /* EasyKeyboardView.swift in Sources */,
+				F6583FB82984484100E205B9 /* NormalGameView.swift in Sources */,
+				F6567FF7296D6911003F806E /* EasyGameOverView.swift in Sources */,
+				F6567FE1296C2546003F806E /* OnboardingView.swift in Sources */,
+				F6B351B229810C53005C27AB /* EasyGameState.swift in Sources */,
+				F6B351B029810893005C27AB /* EasyGameView.swift in Sources */,
+				F6567FCD296BEE88003F806E /* MainView.swift in Sources */,
+				F6567FE5296D4DCB003F806E /* HardKeyboardView.swift in Sources */,
+				F608731E298430760080CE5C /* NormalGameState.swift in Sources */,
+				F6087324298430AA0080CE5C /* HardGameView.swift in Sources */,
+				F6567FCB296BEE88003F806E /* KotobaasobiApp.swift in Sources */,
+				F6087320298430860080CE5C /* HardGameState.swift in Sources */,
+				F6394C78298187D90083506F /* +Color.swift in Sources */,
+				F6567FEF296D61FD003F806E /* Models.swift in Sources */,
+				F608732D298431BE0080CE5C /* NormalKeyboardView.swift in Sources */,
+				F6567FF1296D65BF003F806E /* Words.swift in Sources */,
+				F66309AB2986CA8B00CC294A /* +keyboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F6567FD3296BEE8A003F806E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6567FD4296BEE8A003F806E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6567FD6296BEE8A003F806E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kotobaasobi/Preview Content\"";
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kotobaasobi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.Kotobaasobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F6567FD7296BEE8A003F806E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kotobaasobi/Preview Content\"";
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kotobaasobi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.Kotobaasobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6567FC2296BEE88003F806E /* Build configuration list for PBXProject "Kotobaasobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6567FD3296BEE8A003F806E /* Debug */,
+				F6567FD4296BEE8A003F806E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6567FD5296BEE8A003F806E /* Build configuration list for PBXNativeTarget "Kotobaasobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6567FD6296BEE8A003F806E /* Debug */,
+				F6567FD7296BEE8A003F806E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6567FE8296D6094003F806E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		F66309A72986C14700CC294A /* XCRemoteSwiftPackageReference "AlertX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neel-makhecha/AlertX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F66309AC2986D41B00CC294A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6567FE9296D6094003F806E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6567FE8296D6094003F806E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		F66309A82986C14700CC294A /* AlertX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66309A72986C14700CC294A /* XCRemoteSwiftPackageReference "AlertX" */;
+			productName = AlertX;
+		};
+		F66309AD2986D41B00CC294A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66309AC2986D41B00CC294A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F6567FBF296BEE88003F806E /* Project object */;
+}

@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F61AB2C928A7CE0E00AD6253 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F61AB2C828A7CE0E00AD6253 /* SnapKit */; };
+		F634565C28A7AFDC0093BE1A /* IntermediateKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634565B28A7AFDC0093BE1A /* IntermediateKeyboardViewController.swift */; };
+		F634565E28A7AFF70093BE1A /* IntermediateBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634565D28A7AFF70093BE1A /* IntermediateBoardViewController.swift */; };
+		F634566028A7B00D0093BE1A /* HardKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634565F28A7B00D0093BE1A /* HardKeyboardViewController.swift */; };
+		F634566228A7B0200093BE1A /* HardBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634566128A7B0200093BE1A /* HardBoardViewController.swift */; };
+		F634566F28A7C8520093BE1A /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634566E28A7C8520093BE1A /* SuccessViewController.swift */; };
+		F634567128A7C8590093BE1A /* FailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634567028A7C8590093BE1A /* FailViewController.swift */; };
+		F634567328A7CC400093BE1A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634567228A7CC400093BE1A /* BaseViewController.swift */; };
+		F63AEB722882DF3200D57A4F /* EasyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AEB712882DF3200D57A4F /* EasyBoardViewController.swift */; };
+		F63AEB782882E2B100D57A4F /* MochiyPopOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F63AEB772882E2B100D57A4F /* MochiyPopOne-Regular.ttf */; };
+		F63AEB9E2883087A00D57A4F /* KeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AEB9D2883087A00D57A4F /* KeyCollectionViewCell.swift */; };
+		F63AEBA42883094600D57A4F /* EasyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AEBA32883094600D57A4F /* EasyGameViewController.swift */; };
+		F63AEBA62883095500D57A4F /* EasyKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63AEBA52883095500D57A4F /* EasyKeyboardViewController.swift */; };
+		F64D0DE6287BE29000A897FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D0DE5287BE29000A897FE /* AppDelegate.swift */; };
+		F64D0DE8287BE29000A897FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D0DE7287BE29000A897FE /* SceneDelegate.swift */; };
+		F64D0DEF287BE29100A897FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D0DEE287BE29100A897FE /* Assets.xcassets */; };
+		F64D0DF2287BE29100A897FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D0DF0287BE29100A897FE /* LaunchScreen.storyboard */; };
+		F64D0DFA287BE77B00A897FE /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D0DF9287BE77B00A897FE /* StageViewController.swift */; };
+		F64EA71729152CC200409924 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64EA71629152CC200409924 /* KeyboardViewController.swift */; };
+		F64EA71B29152CC200409924 /* WadoruKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F64EA71429152CC200409924 /* WadoruKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F65A1BE0287EDA5D00D1F6D5 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65A1BDF287EDA5D00D1F6D5 /* main.storyboard */; };
+		F677DA282882CFD90046BEA5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677DA272882CFD90046BEA5 /* Color+Extension.swift */; };
+		F691E69B28E06AFA00E58F57 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691E69A28E06AFA00E58F57 /* UIImage+Extension.swift */; };
+		F694700E289BDF6800EC2067 /* KeyboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694700D289BDF6800EC2067 /* KeyboardCollectionViewCell.swift */; };
+		F694701228A5D9A200EC2067 /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694701128A5D9A200EC2067 /* IntermediateViewController.swift */; };
+		F694701428A5D9A900EC2067 /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694701328A5D9A900EC2067 /* HardViewController.swift */; };
+		F6F4A3C128BEDD3600B8AF9E /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A3C028BEDD3600B8AF9E /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		F6F4A3C428BF34DE00B8AF9E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F6F4A3C328BF34DE00B8AF9E /* Realm */; };
+		F6F4A3C628BF34DE00B8AF9E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6F4A3C528BF34DE00B8AF9E /* RealmSwift */; };
+		F6F4A3C928BF376C00B8AF9E /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A3C828BF376C00B8AF9E /* WordList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F64EA71929152CC200409924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F64D0DDA287BE29000A897FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64EA71329152CC200409924;
+			remoteInfo = WadoruKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F64EA71F29152CC200409924 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F64EA71B29152CC200409924 /* WadoruKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F634565B28A7AFDC0093BE1A /* IntermediateKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateKeyboardViewController.swift; sourceTree = "<group>"; };
+		F634565D28A7AFF70093BE1A /* IntermediateBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateBoardViewController.swift; sourceTree = "<group>"; };
+		F634565F28A7B00D0093BE1A /* HardKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardKeyboardViewController.swift; sourceTree = "<group>"; };
+		F634566128A7B0200093BE1A /* HardBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardBoardViewController.swift; sourceTree = "<group>"; };
+		F634566E28A7C8520093BE1A /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		F634567028A7C8590093BE1A /* FailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailViewController.swift; sourceTree = "<group>"; };
+		F634567228A7CC400093BE1A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F63AEB712882DF3200D57A4F /* EasyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBoardViewController.swift; sourceTree = "<group>"; };
+		F63AEB772882E2B100D57A4F /* MochiyPopOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MochiyPopOne-Regular.ttf"; sourceTree = "<group>"; };
+		F63AEB9D2883087A00D57A4F /* KeyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCollectionViewCell.swift; sourceTree = "<group>"; };
+		F63AEBA32883094600D57A4F /* EasyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameViewController.swift; sourceTree = "<group>"; };
+		F63AEBA52883095500D57A4F /* EasyKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyKeyboardViewController.swift; sourceTree = "<group>"; };
+		F64D0DE2287BE29000A897FE /* WordleJapanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleJapanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64D0DE5287BE29000A897FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F64D0DE7287BE29000A897FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F64D0DEE287BE29100A897FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F64D0DF1287BE29100A897FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F64D0DF3287BE29100A897FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64D0DF9287BE77B00A897FE /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
+		F64EA71429152CC200409924 /* WadoruKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WadoruKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64EA71629152CC200409924 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F64EA71829152CC200409924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65A1BDF287EDA5D00D1F6D5 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		F677DA272882CFD90046BEA5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F691E69A28E06AFA00E58F57 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F694700D289BDF6800EC2067 /* KeyboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		F694701128A5D9A200EC2067 /* IntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
+		F694701328A5D9A900EC2067 /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
+		F6F4A3C028BEDD3600B8AF9E /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		F6F4A3C828BF376C00B8AF9E /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64D0DDF287BE29000A897FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F4A3C628BF34DE00B8AF9E /* RealmSwift in Frameworks */,
+				F6F4A3C428BF34DE00B8AF9E /* Realm in Frameworks */,
+				F61AB2C928A7CE0E00AD6253 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64EA71129152CC200409924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F634566328A7B02F0093BE1A /* EasyStage */ = {
+			isa = PBXGroup;
+			children = (
+				F63AEB712882DF3200D57A4F /* EasyBoardViewController.swift */,
+				F63AEBA52883095500D57A4F /* EasyKeyboardViewController.swift */,
+				F63AEBA32883094600D57A4F /* EasyGameViewController.swift */,
+			);
+			path = EasyStage;
+			sourceTree = "<group>";
+		};
+		F634566428A7B03D0093BE1A /* IntermediateStage */ = {
+			isa = PBXGroup;
+			children = (
+				F634565D28A7AFF70093BE1A /* IntermediateBoardViewController.swift */,
+				F634565B28A7AFDC0093BE1A /* IntermediateKeyboardViewController.swift */,
+				F694701128A5D9A200EC2067 /* IntermediateViewController.swift */,
+			);
+			path = IntermediateStage;
+			sourceTree = "<group>";
+		};
+		F634566528A7B0580093BE1A /* HardStage */ = {
+			isa = PBXGroup;
+			children = (
+				F634566128A7B0200093BE1A /* HardBoardViewController.swift */,
+				F634565F28A7B00D0093BE1A /* HardKeyboardViewController.swift */,
+				F694701328A5D9A900EC2067 /* HardViewController.swift */,
+			);
+			path = HardStage;
+			sourceTree = "<group>";
+		};
+		F634566628A7B0770093BE1A /* StageSelect */ = {
+			isa = PBXGroup;
+			children = (
+				F64D0DF9287BE77B00A897FE /* StageViewController.swift */,
+			);
+			path = StageSelect;
+			sourceTree = "<group>";
+		};
+		F634566C28A7B4E80093BE1A /* ResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F634567228A7CC400093BE1A /* BaseViewController.swift */,
+				F634566E28A7C8520093BE1A /* SuccessViewController.swift */,
+				F634567028A7C8590093BE1A /* FailViewController.swift */,
+			);
+			path = ResultViewController;
+			sourceTree = "<group>";
+		};
+		F634566D28A7C7DB0093BE1A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F65A1BDF287EDA5D00D1F6D5 /* main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F63AEB6E2882DED800D57A4F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F64EA70D29152C5A00409924 /* CustomKeyboard */,
+				F634566628A7B0770093BE1A /* StageSelect */,
+				F634566328A7B02F0093BE1A /* EasyStage */,
+				F634566428A7B03D0093BE1A /* IntermediateStage */,
+				F634566528A7B0580093BE1A /* HardStage */,
+				F634566C28A7B4E80093BE1A /* ResultViewController */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F63AEBA02883089E00D57A4F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F64D0DEE287BE29100A897FE /* Assets.xcassets */,
+				F64D0DF0287BE29100A897FE /* LaunchScreen.storyboard */,
+				F63AEB772882E2B100D57A4F /* MochiyPopOne-Regular.ttf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F63AEBA1288308D700D57A4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F63AEB9D2883087A00D57A4F /* KeyCollectionViewCell.swift */,
+				F694700D289BDF6800EC2067 /* KeyboardCollectionViewCell.swift */,
+				F6F4A3C028BEDD3600B8AF9E /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F63AEBA2288308E300D57A4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F64D0DE5287BE29000A897FE /* AppDelegate.swift */,
+				F64D0DE7287BE29000A897FE /* SceneDelegate.swift */,
+				F677DA272882CFD90046BEA5 /* Color+Extension.swift */,
+				F691E69A28E06AFA00E58F57 /* UIImage+Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F64D0DD9287BE29000A897FE = {
+			isa = PBXGroup;
+			children = (
+				F64D0DE4287BE29000A897FE /* WordleJapanese */,
+				F64EA71529152CC200409924 /* WadoruKeyboard */,
+				F64D0DE3287BE29000A897FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F64D0DE3287BE29000A897FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F64D0DE2287BE29000A897FE /* WordleJapanese.app */,
+				F64EA71429152CC200409924 /* WadoruKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F64D0DE4287BE29000A897FE /* WordleJapanese */ = {
+			isa = PBXGroup;
+			children = (
+				F6F4A3C728BF375E00B8AF9E /* Database */,
+				F634566D28A7C7DB0093BE1A /* Storyboard */,
+				F63AEBA2288308E300D57A4F /* Resources */,
+				F63AEBA1288308D700D57A4F /* View */,
+				F63AEBA02883089E00D57A4F /* Assets */,
+				F63AEB6E2882DED800D57A4F /* Core */,
+				F64D0DF3287BE29100A897FE /* Info.plist */,
+			);
+			path = WordleJapanese;
+			sourceTree = "<group>";
+		};
+		F64EA70D29152C5A00409924 /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		F64EA71529152CC200409924 /* WadoruKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F64EA71629152CC200409924 /* KeyboardViewController.swift */,
+				F64EA71829152CC200409924 /* Info.plist */,
+			);
+			path = WadoruKeyboard;
+			sourceTree = "<group>";
+		};
+		F6F4A3C728BF375E00B8AF9E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F6F4A3C828BF376C00B8AF9E /* WordList.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F64D0DE1287BE29000A897FE /* WordleJapanese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64D0DF6287BE29100A897FE /* Build configuration list for PBXNativeTarget "WordleJapanese" */;
+			buildPhases = (
+				F64D0DDE287BE29000A897FE /* Sources */,
+				F64D0DDF287BE29000A897FE /* Frameworks */,
+				F64D0DE0287BE29000A897FE /* Resources */,
+				F64EA71F29152CC200409924 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F64EA71A29152CC200409924 /* PBXTargetDependency */,
+			);
+			name = WordleJapanese;
+			packageProductDependencies = (
+				F61AB2C828A7CE0E00AD6253 /* SnapKit */,
+				F6F4A3C328BF34DE00B8AF9E /* Realm */,
+				F6F4A3C528BF34DE00B8AF9E /* RealmSwift */,
+			);
+			productName = WordleJapanese;
+			productReference = F64D0DE2287BE29000A897FE /* WordleJapanese.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F64EA71329152CC200409924 /* WadoruKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64EA71C29152CC200409924 /* Build configuration list for PBXNativeTarget "WadoruKeyboard" */;
+			buildPhases = (
+				F64EA71029152CC200409924 /* Sources */,
+				F64EA71129152CC200409924 /* Frameworks */,
+				F64EA71229152CC200409924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WadoruKeyboard;
+			productName = WadoruKeyboard;
+			productReference = F64EA71429152CC200409924 /* WadoruKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64D0DDA287BE29000A897FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F64D0DE1287BE29000A897FE = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F64EA71329152CC200409924 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F64D0DDD287BE29000A897FE /* Build configuration list for PBXProject "WordleJapanese" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F64D0DD9287BE29000A897FE;
+			packageReferences = (
+				F61AB2C728A7CE0E00AD6253 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F6F4A3C228BF34DE00B8AF9E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = F64D0DE3287BE29000A897FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64D0DE1287BE29000A897FE /* WordleJapanese */,
+				F64EA71329152CC200409924 /* WadoruKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F64D0DE0287BE29000A897FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64D0DF2287BE29100A897FE /* LaunchScreen.storyboard in Resources */,
+				F63AEB782882E2B100D57A4F /* MochiyPopOne-Regular.ttf in Resources */,
+				F64D0DEF287BE29100A897FE /* Assets.xcassets in Resources */,
+				F65A1BE0287EDA5D00D1F6D5 /* main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64EA71229152CC200409924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64D0DDE287BE29000A897FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F694700E289BDF6800EC2067 /* KeyboardCollectionViewCell.swift in Sources */,
+				F63AEBA42883094600D57A4F /* EasyGameViewController.swift in Sources */,
+				F634565E28A7AFF70093BE1A /* IntermediateBoardViewController.swift in Sources */,
+				F634565C28A7AFDC0093BE1A /* IntermediateKeyboardViewController.swift in Sources */,
+				F677DA282882CFD90046BEA5 /* Color+Extension.swift in Sources */,
+				F634567328A7CC400093BE1A /* BaseViewController.swift in Sources */,
+				F64D0DFA287BE77B00A897FE /* StageViewController.swift in Sources */,
+				F63AEB9E2883087A00D57A4F /* KeyCollectionViewCell.swift in Sources */,
+				F64D0DE6287BE29000A897FE /* AppDelegate.swift in Sources */,
+				F634566028A7B00D0093BE1A /* HardKeyboardViewController.swift in Sources */,
+				F6F4A3C928BF376C00B8AF9E /* WordList.swift in Sources */,
+				F694701228A5D9A200EC2067 /* IntermediateViewController.swift in Sources */,
+				F634567128A7C8590093BE1A /* FailViewController.swift in Sources */,
+				F64D0DE8287BE29000A897FE /* SceneDelegate.swift in Sources */,
+				F6F4A3C128BEDD3600B8AF9E /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				F691E69B28E06AFA00E58F57 /* UIImage+Extension.swift in Sources */,
+				F694701428A5D9A900EC2067 /* HardViewController.swift in Sources */,
+				F634566228A7B0200093BE1A /* HardBoardViewController.swift in Sources */,
+				F63AEB722882DF3200D57A4F /* EasyBoardViewController.swift in Sources */,
+				F634566F28A7C8520093BE1A /* SuccessViewController.swift in Sources */,
+				F63AEBA62883095500D57A4F /* EasyKeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64EA71029152CC200409924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64EA71729152CC200409924 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F64EA71A29152CC200409924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64EA71329152CC200409924 /* WadoruKeyboard */;
+			targetProxy = F64EA71929152CC200409924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F64D0DF0287BE29100A897FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64D0DF1287BE29100A897FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F64D0DF4287BE29100A897FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F64D0DF5287BE29100A897FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F64D0DF7287BE29100A897FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordleJapanese/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.WordleJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F64D0DF8287BE29100A897FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordleJapanese/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.WordleJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F64EA71D29152CC200409924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WadoruKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WadoruKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.WordleJapanese.WadoruKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64EA71E29152CC200409924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8RC8B498C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WadoruKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WadoruKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yoonjae.WordleJapanese.WadoruKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64D0DDD287BE29000A897FE /* Build configuration list for PBXProject "WordleJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64D0DF4287BE29100A897FE /* Debug */,
+				F64D0DF5287BE29100A897FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64D0DF6287BE29100A897FE /* Build configuration list for PBXNativeTarget "WordleJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64D0DF7287BE29100A897FE /* Debug */,
+				F64D0DF8287BE29100A897FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64EA71C29152CC200409924 /* Build configuration list for PBXNativeTarget "WadoruKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64EA71D29152CC200409924 /* Debug */,
+				F64EA71E29152CC200409924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F61AB2C728A7CE0E00AD6253 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6F4A3C228BF34DE00B8AF9E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F61AB2C828A7CE0E00AD6253 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61AB2C728A7CE0E00AD6253 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F6F4A3C328BF34DE00B8AF9E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6F4A3C228BF34DE00B8AF9E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		F6F4A3C528BF34DE00B8AF9E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6F4A3C228BF34DE00B8AF9E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F64D0DDA287BE29000A897FE /* Project object */;
+}
